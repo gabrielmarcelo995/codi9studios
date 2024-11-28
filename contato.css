@@ -1,0 +1,69 @@
+/* Remover margens padrão do corpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Define uma fonte mais legível */
+}
+
+/* Estilo do menu de navegação */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center;     /* Centraliza verticalmente os itens */
+    padding: 10px 0;
+    position: sticky;        /* Fixa o menu no topo */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;  /* Efeito de destaque ao passar o mouse */
+    color: #fff;
+}
+
+/* Estilo do campo de conteúdo da página de contatos */
+fieldset {
+    width: 50%;
+    padding: 20px;
+    margin: 5% auto; /* Centraliza o conteúdo */
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo do título dentro do fieldset */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo do parágrafo de contatos */
+p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 80%;
+        padding: 20px;
+    }
+}
